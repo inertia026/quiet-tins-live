@@ -240,7 +240,7 @@
     <blockquote id="fq-text">The quiet ones speak louder.</blockquote>
     <figcaption>The founder</figcaption>
   </figure>
-  <p class="by">A founder's project. Updated 13 November 2026, after the Friday close.</p>
+  <p class="by">A founder's project. Updated 20 November 2026, after run Fri 20 Nov 2026 close.</p>
 
   <div class="shelf" id="shelf" role="group" aria-label="A shelf of six tins. Each one is a real stock from 10 November."></div>
   <div class="shelf-foot">
@@ -463,34 +463,100 @@
   // ======== WEEKLY RUN DATA (updated every run) ========
   /*RUN_START*/
   const RUN = {
-    runDate: 'Fri 13 Nov 2026 close',
-    window: 'Mon 16 – Fri 20 Nov 2026',
-    status: 'Live · results after Fri 20 Nov close',
-    versus: 'Zero overlap. The wise shopkeeper and the goldfish disagree on every single stock. One of them will be very smug next Friday.',
-    tins: [
-      {sym:'MARI', sec:'Oil & gas exploration', px:719.30, why:'At its 52-week high, heavily traded, barely any pullback. Careful: it jumped 5.8% on Friday, just under our 6% no-chase line, so it rattles a little.'},
-      {sym:'FFC',  sec:'Fertilizer',            px:569.12, why:'One of the calmest big stocks on PSX (moves about 1.9% a day), heavily traded, climbing steadily for a month.'},
-      {sym:'MCB',  sec:'Banks',                 px:409.12, why:'Only 1% below its best price of the year, with almost no pullback.'},
-      {sym:'HBL',  sec:'Banks',                 px:309.43, why:'Calm, busy and climbing slowly. No drama last week.'},
-      {sym:'OGDC', sec:'Oil & gas exploration', px:315.87, why:'The calmest stock on the list and one of the most traded on PSX.'},
-    ],
-    goldfish: [
-      {sym:'PTC',  sec:'Tech & telecom',        px:46.64,  why:'Down 3.6% this week and not overbought (RSI 39). Exactly the calm laggard that won last week.'},
-      {sym:'SYS',  sec:'Tech & telecom',        px:114.57, why:'Slipped 2.0% this week. Tech sat out the big rally.'},
-      {sym:'ATRL', sec:'Refinery',              px:963.89, why:'Still down 14% over ten days, RSI 32. The biggest laggard on the shelf.'},
-      {sym:'POL',  sec:'Oil & gas exploration', px:673.02, why:'Barely moved all week (+1.6%). Quiet as a full tin.'},
-      {sym:'NBP',  sec:'Banks',                 px:173.32, why:'Fell 3.5% after last week’s spike. Goldfish thinks the noise has drained out.'},
-    ],
-    goldfishMemory: 1,
-    tinsVersion: '2.0',
-    goldfishVersion: '1.0',
-    tinsChange: 'v2.0 created from the two-year factor study',
-    lastWeek: [
-      {k:'Old formula (v1), run 10 Nov', v:'−2.8%', cls:'bad', n:'3 of 5 days done · KSE-100 −0.8%'},
-      {k:'Goldfish, if it had existed', v:'+2.0%', cls:'good', n:'Homework it marked itself (learned from that week)'},
-      {k:'Window closes', v:'Tue 17 Nov', cls:'', n:'Final numbers go on the scorecard'},
-    ],
-  };
+  "runDate": "Fri 20 Nov 2026 close",
+  "window": "the next 5 trading sessions",
+  "status": "Live · results after 5 sessions",
+  "versus": "Zero overlap. The shopkeeper and the goldfish disagree on every stock. One of them will be smug next week.",
+  "tins": [
+    {
+      "sym": "FFC",
+      "sec": "Fertilizer",
+      "px": 571.3,
+      "why": "7% below its 52-week high, moves about 1.5% a day, PKR 828M traded daily, +10.8% over 20 days."
+    },
+    {
+      "sym": "HUBC",
+      "sec": "Power",
+      "px": 209.81,
+      "why": "6% below its 52-week high, moves about 2.1% a day, PKR 653M traded daily, +12.8% over 20 days."
+    },
+    {
+      "sym": "OGDC",
+      "sec": "Oil & gas exploration",
+      "px": 312.55,
+      "why": "7% below its 52-week high, moves about 1.8% a day, PKR 753M traded daily, +5.7% over 20 days."
+    },
+    {
+      "sym": "EFERT",
+      "sec": "Fertilizer",
+      "px": 220.48,
+      "why": "8% below its 52-week high, moves about 2.7% a day, PKR 504M traded daily, +16.9% over 20 days."
+    },
+    {
+      "sym": "MARI",
+      "sec": "Oil & gas exploration",
+      "px": 718.51,
+      "why": "3% below its 52-week high, moves about 3.4% a day, PKR 1,374M traded daily, +13.6% over 20 days."
+    }
+  ],
+  "goldfish": [
+    {
+      "sym": "GAL",
+      "sec": "Autos",
+      "px": 527.88,
+      "why": "Looks like past winners: 5-day -6.3%, 10-day -6.7%, volume 0.3x normal."
+    },
+    {
+      "sym": "ATRL",
+      "sec": "Refinery",
+      "px": 928.66,
+      "why": "Looks like past winners: 5-day -3.7%, 10-day -5.8%, volume 1.0x normal."
+    },
+    {
+      "sym": "PTC",
+      "sec": "Tech & telecom",
+      "px": 44.64,
+      "why": "Looks like past winners: 5-day -4.3%, 10-day -7.7%, volume 0.4x normal."
+    },
+    {
+      "sym": "GCIL",
+      "sec": "Chemicals",
+      "px": 32.84,
+      "why": "Looks like past winners: 5-day -3.9%, 10-day -4.7%, volume 0.4x normal."
+    },
+    {
+      "sym": "GHNI",
+      "sec": "Autos",
+      "px": 1187.35,
+      "why": "Looks like past winners: 5-day -5.9%, 10-day -1.9%, volume 0.5x normal."
+    }
+  ],
+  "goldfishMemory": 2,
+  "tinsVersion": "2.1",
+  "goldfishVersion": "1.1",
+  "tinsChange": "no change; re-tested and still the best version",
+  "lastWeek": [
+    {
+      "k": "v1, run 2026-11-10",
+      "v": "−3.4%",
+      "cls": "bad",
+      "n": "vs -0.1% for the stocks it could pick"
+    },
+    {
+      "k": "v2, run 2026-11-13",
+      "v": "−0.8%",
+      "cls": "good",
+      "n": "vs -0.9% for the stocks it could pick, KSE-100 -0.3%"
+    },
+    {
+      "k": "Goldfish, run 2026-11-13",
+      "v": "−2.4%",
+      "cls": "bad",
+      "n": "vs -0.9% for the stocks it could pick, KSE-100 -0.3%"
+    }
+  ],
+  "goldfishSitOut": ""
+};
   /*RUN_END*/
 
   document.getElementById('wk-sub').textContent = `Picked at the ${RUN.runDate}. Held ${RUN.window}.`;
@@ -504,7 +570,7 @@
         <div><h3>${title}</h3><p>${sub}</p></div></header>
       ${list.map(r => `<div class="pickrow"><span class="sym">${r.sym}</span><span class="sec">${r.sec}</span>
         ${r.ret === undefined ? `<span class="px">PKR ${fmt(r.px)}<small>bought at</small></span>` : `<span class="res ${r.ret >= 0 ? 'good' : 'bad'}">${r.ret >= 0 ? '+' : '−'}${Math.abs(r.ret).toFixed(1)}%</span>`}
-        <p class="why">${r.why}</p></div>`).join('')}
+        <p class="why">${r.why}</p></div>`).join('') || `<div class="pickrow"><p class="why">${RUN.goldfishSitOut || 'No picks this week.'}</p></div>`}
     </article>`;
   document.getElementById('picks').innerHTML =
     card('tins', `The Quiet Tins v${RUN.tinsVersion}`, 'Two years of memory', RUN.tins, 'fullTin') +
